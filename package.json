@@ -1,5 +1,5 @@
 {
-    "name": "@runner/generator-repl",
+    "name": "runner-generator-repl",
     "version": "1.0.0",
     "description": "Tasks generator for REPL.",
     "author": {
@@ -10,15 +10,12 @@
         "type": "git",
         "url": "https://github.com/runner/generator-repl.git"
     },
-    "publishConfig": {
-        "access": "public"
-    },
     "scripts": {
         "lint": "eslint .",
         "test": "npm run lint"
     },
     "dependencies": {
-        "@runner/logger": "^1.0.0"
+        "runner-logger": "^1.0.0"
     },
     "devDependencies": {
         "cjs-eslint": "^1.1.1"

@@ -2,17 +2,17 @@ Tasks generator for REPL
 ========================
 
 [![build status](https://img.shields.io/travis/runner/generator-repl.svg?style=flat-square)](https://travis-ci.org/runner/generator-repl)
-[![npm version](https://img.shields.io/npm/v/@runner/generator-repl.svg?style=flat-square)](https://www.npmjs.com/package/@runner/generator-repl)
+[![npm version](https://img.shields.io/npm/v/runner-generator-repl.svg?style=flat-square)](https://www.npmjs.com/package/runner-generator-repl)
 [![dependencies status](https://img.shields.io/david/runner/generator-repl.svg?style=flat-square)](https://david-dm.org/runner/generator-repl)
 [![devDependencies status](https://img.shields.io/david/dev/runner/generator-repl.svg?style=flat-square)](https://david-dm.org/runner/generator-repl?type=dev)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/runner)
-[![RunKit](https://img.shields.io/badge/RunKit-try-yellow.svg?style=flat-square)](https://npm.runkit.com/@runner/generator-repl)
+[![RunKit](https://img.shields.io/badge/RunKit-try-yellow.svg?style=flat-square)](https://npm.runkit.com/runner-generator-repl)
 
 
 ## Installation ##
 
 ```bash
-npm install @runner/generator-repl
+npm install runner-generator-repl
 ```
 
 
@@ -21,7 +21,7 @@ npm install @runner/generator-repl
 Add to the scope:
 
 ```js
-var generator = require('@runner/generator-repl');
+var generator = require('runner-generator-repl');
 ```
 
 Generate tasks according to the given config:
@@ -99,4 +99,4 @@ according to the contribution [rules](.github/contributing.md).
 
 ## License ##
 
-`@runner/generator-repl` is released under the [GPL-3.0 License](http://opensource.org/licenses/GPL-3.0).
+`runner-generator-repl` is released under the [GPL-3.0 License](http://opensource.org/licenses/GPL-3.0).

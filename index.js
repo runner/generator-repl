@@ -6,7 +6,7 @@
 'use strict';
 
 var name = 'repl',
-    log  = require('@runner/logger').wrap(name);
+    log  = require('runner-logger').wrap(name);
 
 
 function start ( config, done ) {
