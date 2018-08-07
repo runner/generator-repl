@@ -59,13 +59,13 @@ function generator ( config, options ) {
             historySize: 100,
             removeHistoryDuplicates: true,
             completer: function ( line ) {
-                var tasks = Object.keys(config.runner.tasks).sort(),
-                    hits = tasks.filter(function ( task ) {
+                var taskList = Object.keys(config.runner.tasks).sort(),
+                    hits = taskList.filter(function ( task ) {
                         return task.startsWith(line);
                     });
 
                 // show all completions if none found
-                return [hits.length ? hits : tasks, line];
+                return [hits.length ? hits : taskList, line];
             }
         }
     }, config || {});
