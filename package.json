@@ -1,6 +1,6 @@
 {
     "name": "runner-generator-repl",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Tasks generator for REPL.",
     "author": {
         "name": "Stanislav Kalashnik",
@@ -15,7 +15,7 @@
         "test": "npm run lint"
     },
     "dependencies": {
-        "runner-logger": "^1.0.0"
+        "runner-logger": "^1.0.1"
     },
     "devDependencies": {
         "cjs-eslint": "^1.1.1"
