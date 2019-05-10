@@ -69,7 +69,7 @@ function generator ( config, options ) {
             }
         }
     }, config || {});
-    options = Object.assign(generator.options, options || {});
+    options = Object.assign({}, generator.options, options || {});
 
     tasks[options.prefix + 'config' + options.suffix] = function () {
         log.inspect(config, log);
