@@ -5,12 +5,14 @@
 
 'use strict';
 
-var name = 'repl',
+const
+    name = 'repl',
     log  = require('runner-logger').wrap(name);
 
 
 function start ( config, done ) {
-    var readline = require('readline'),
+    const
+        readline = require('readline'),
         instance = readline.createInterface(config.readline);
 
     //readline.setPrompt(config.readline.prompt);
@@ -47,8 +49,9 @@ function stop ( instance ) {
 
 
 function generator ( config, options ) {
-    var tasks = {},
-        instance;
+    const tasks = {};
+
+    let instance;
 
     // sanitize and extend defaults
     generator.config = config = Object.assign({
@@ -59,7 +62,8 @@ function generator ( config, options ) {
             historySize: 100,
             removeHistoryDuplicates: true,
             completer: function ( line ) {
-                var taskList = Object.keys(config.runner.tasks).sort(),
+                const
+                    taskList = Object.keys(config.runner.tasks).sort(),
                     hits = taskList.filter(function ( task ) {
                         return task.startsWith(line);
                     });
