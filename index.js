@@ -49,7 +49,9 @@ function stop ( instance ) {
 
 
 function generator ( config = {}, options = {} ) {
-    const tasks = {};
+    const
+        tasks = {},
+        {prefix = name + ':', suffix = ''} = options;
 
     let instance;
 
@@ -74,21 +76,15 @@ function generator ( config = {}, options = {} ) {
         }
     }, config);
 
-    // sanitize and extend defaults
-    options = Object.assign({}, {
-        prefix: name + ':',
-        suffix: ''
-    }, options);
-
-    tasks[options.prefix + 'config' + options.suffix] = function () {
+    tasks[prefix + 'config' + suffix] = function () {
         log.inspect(config, log);
     };
 
-    tasks[options.prefix + 'start' + options.suffix] = function ( done ) {
+    tasks[prefix + 'start' + suffix] = function ( done ) {
         instance = start(config, done);
     };
 
-    tasks[options.prefix + 'stop' + options.suffix] = function () {
+    tasks[prefix + 'stop' + suffix] = function () {
         stop(instance);
         instance = null;
     };
